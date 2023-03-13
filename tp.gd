@@ -18,4 +18,4 @@ func _ready():
 
 func _on_tp_body_entered(body):
 	var p = get_node("/root/Joc/Personatge")
-	p.position = Vector2(2000,1990)
+	p.position = Vector2(687,3990)
