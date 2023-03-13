@@ -1,0 +1,555 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Personatge.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Paret.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Detector.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Detectort2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://platinvi.tscn" type="PackedScene" id=5]
+[ext_resource path="res://rampa.tscn" type="PackedScene" id=6]
+[ext_resource path="res://ainvi.tscn" type="PackedScene" id=7]
+[ext_resource path="res://ainvi3.gd" type="Script" id=8]
+[ext_resource path="res://ainvi2.gd" type="Script" id=9]
+[ext_resource path="res://ainvi4.gd" type="Script" id=10]
+[ext_resource path="res://ainvi5.gd" type="Script" id=11]
+[ext_resource path="res://aer.gd" type="Script" id=12]
+[ext_resource path="res://bg.tscn" type="PackedScene" id=13]
+[ext_resource path="res://aerot.tscn" type="PackedScene" id=14]
+[ext_resource path="res://aer2.gd" type="Script" id=15]
+[ext_resource path="res://tp.tscn" type="PackedScene" id=16]
+
+[node name="Joc" type="Node2D"]
+
+[node name="Personatge" parent="." instance=ExtResource( 1 )]
+scale = Vector2( 3, 3 )
+
+[node name="plataformes" type="Node2D" parent="."]
+
+[node name="Parets" type="Node2D" parent="plataformes"]
+
+[node name="Paret" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 0, 2000 )
+scale = Vector2( 9, 2000 )
+script = null
+
+[node name="ParetDreta" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 4000, 2000 )
+scale = Vector2( 3, 2000 )
+script = null
+
+[node name="terra" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2000, 4000 )
+scale = Vector2( 2000, 3 )
+script = null
+
+[node name="plataforma" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2000, 2000 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma2" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1509, 2375 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma3" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2340, 2590 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma4" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2264, 1295 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma16" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3900, 187 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma26" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3115, 973 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma56" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3242, 973 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma30" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3899, 982 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma31" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3899, 807 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma32" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3899, 657 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma39" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3657, 527 )
+scale = Vector2( 60, 10 )
+script = null
+
+[node name="plataforma41" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3423, 497 )
+rotation = -0.764454
+scale = Vector2( 175, 10 )
+script = null
+
+[node name="plataforma55" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3472, 844 )
+rotation = -0.764454
+scale = Vector2( 190, 10 )
+script = null
+
+[node name="plataforma40" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3607, 620 )
+rotation = 1.5708
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma34" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3680, 386 )
+scale = Vector2( 150, 10 )
+script = null
+
+[node name="plataforma42" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3166, 543 )
+rotation = 1.5708
+scale = Vector2( 200, 10 )
+script = null
+
+[node name="plataforma48" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 611, 1780 )
+rotation = 1.5708
+scale = Vector2( 200, 10 )
+script = null
+
+[node name="plataforma57" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 399, 2271 )
+scale = Vector2( 400, 10 )
+script = null
+
+[node name="plataforma58" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 348, 2418 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma60" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 672, 2550 )
+rotation = 1.5708
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma49" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 191, 1637 )
+rotation = 1.5708
+scale = Vector2( 200, 10 )
+script = null
+
+[node name="plataforma50" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 190, 1203 )
+rotation = 1.5708
+scale = Vector2( 10, 10 )
+script = null
+
+[node name="plataforma51" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 446, 796 )
+rotation = 1.5708
+scale = Vector2( 10, 10 )
+script = null
+
+[node name="plataforma43" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3342, 360 )
+scale = Vector2( 10, 10 )
+script = null
+
+[node name="plataforma52" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2847, 542 )
+scale = Vector2( 10, 10 )
+script = null
+
+[node name="plataforma44" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3255, 102 )
+rotation = 1.5708
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma45" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3540, 286 )
+rotation = 1.5708
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma29" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2851, 953 )
+scale = Vector2( 30, 10 )
+script = null
+
+[node name="plataforma35" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2831, 1053 )
+rotation = 1.5708
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma28" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3025, 883 )
+rotation = 1.5708
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma27" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2917, 793 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma22" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3900, 1156 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma24" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3221, 1160 )
+scale = Vector2( 400, 10 )
+script = null
+
+[node name="plataforma25" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2827, 401 )
+rotation = 1.5708
+scale = Vector2( 402, 10 )
+script = null
+
+[node name="plataforma5" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 91.9998, 177 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma46" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 110, 597 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma47" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 110, 309 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma33" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 109, 985 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma7" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1534, 1822 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma8" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1901, 1600 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma9" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2713, 1878 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma36" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2707, 1503 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma37" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3195, 1356 )
+scale = Vector2( 200, 10 )
+script = null
+
+[node name="plataforma38" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3465, 1299 )
+scale = Vector2( 10, 10 )
+script = null
+
+[node name="plataforma10" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3900, 1380 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma23" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3870, 1541 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma11" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 937.999, 2149 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma12" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 945, 1907 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma13" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1793, 2848 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma14" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2919, 2591 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma15" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2613, 3097 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma21" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 673, 3296 )
+rotation = 1.5708
+scale = Vector2( 700, 10 )
+script = null
+
+[node name="plataforma18" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1850, 3731 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma17" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1287, 3325 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma53" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1682, 3424 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma54" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1502, 3047 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma59" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1059, 2876 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma61" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 857, 2641 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="sostre" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2000, 0 )
+scale = Vector2( 2000, 3 )
+script = null
+
+[node name="invisibles" type="Node2D" parent="plataformes"]
+
+[node name="platinvi" parent="plataformes/invisibles" instance=ExtResource( 5 )]
+position = Vector2( 2807, 681 )
+scale = Vector2( 10, 10 )
+
+[node name="platinvi2" parent="plataformes/invisibles" instance=ExtResource( 5 )]
+position = Vector2( 2622, 505 )
+scale = Vector2( 50, 10 )
+
+[node name="platinvi3" parent="plataformes/invisibles" instance=ExtResource( 5 )]
+position = Vector2( 2404, 385 )
+scale = Vector2( 50, 10 )
+
+[node name="platinvi4" parent="plataformes/invisibles" instance=ExtResource( 5 )]
+position = Vector2( 1981, 249 )
+scale = Vector2( 200, 10 )
+
+[node name="platinvi5" parent="plataformes/invisibles" instance=ExtResource( 5 )]
+position = Vector2( 1100, 250 )
+scale = Vector2( 500, 10 )
+
+[node name="plataformainvisible" parent="plataformes/invisibles" instance=ExtResource( 5 )]
+position = Vector2( 1801, 219 )
+rotation = 1.5708
+scale = Vector2( 20, 0.1 )
+
+[node name="ainvi" parent="plataformes/invisibles" instance=ExtResource( 7 )]
+position = Vector2( 2806, 667 )
+scale = Vector2( 750, 20 )
+
+[node name="ainvi2" parent="plataformes/invisibles" instance=ExtResource( 7 )]
+position = Vector2( 2621, 489 )
+scale = Vector2( 3700, 20 )
+script = ExtResource( 9 )
+
+[node name="ainvi3" parent="plataformes/invisibles" instance=ExtResource( 7 )]
+position = Vector2( 2403, 371 )
+scale = Vector2( 3700, 20 )
+script = ExtResource( 8 )
+
+[node name="ainvi4" parent="plataformes/invisibles" instance=ExtResource( 7 )]
+position = Vector2( 2043, 230 )
+scale = Vector2( 10000, 20 )
+script = ExtResource( 10 )
+
+[node name="ainvi5" parent="plataformes/invisibles" instance=ExtResource( 7 )]
+position = Vector2( 1099, 230 )
+scale = Vector2( 37000, 20 )
+script = ExtResource( 11 )
+
+[node name="rotatories" type="Node2D" parent="plataformes"]
+
+[node name="protatoria" parent="plataformes/rotatories" instance=ExtResource( 2 )]
+position = Vector2( 3291, 3556 )
+rotation = 1.5708
+scale = Vector2( 150, 10 )
+
+[node name="ae" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 79.9999, 2733 )
+rotation = 1.20253
+scale = Vector2( 150, 3 )
+
+[node name="ae2" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 134, 2912 )
+rotation = 1.5708
+scale = Vector2( 50, 3 )
+
+[node name="ae3" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 248, 2669 )
+rotation = 1.09258
+scale = Vector2( 100, 3 )
+
+[node name="ae4" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 295, 2853 )
+rotation = 1.5708
+scale = Vector2( 100, 3 )
+
+[node name="aer" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 336, 3530 )
+rotation = 1.5708
+scale = Vector2( 100, 3 )
+script = ExtResource( 12 )
+
+[node name="aer2" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 507, 3530 )
+rotation = 1.5708
+scale = Vector2( 100, 3 )
+script = ExtResource( 15 )
+
+[node name="aer3" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 146, 3530 )
+rotation = 1.5708
+scale = Vector2( 100, 3 )
+script = ExtResource( 15 )
+
+[node name="ae7" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 614, 2690 )
+rotation = 1.89892
+scale = Vector2( 100, 3 )
+
+[node name="ae8" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 464, 2672 )
+rotation = 1.89892
+scale = Vector2( 100, 3 )
+
+[node name="ae9" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 431, 2856 )
+rotation = 1.5708
+scale = Vector2( 100, 3 )
+
+[node name="ae10" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 431, 2856 )
+rotation = 1.5708
+scale = Vector2( 100, 3 )
+
+[node name="ae11" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 318, 3040 )
+rotation = 1.35263
+scale = Vector2( 100, 3 )
+
+[node name="ae12" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 152, 3051 )
+rotation = 1.35263
+scale = Vector2( 100, 3 )
+
+[node name="ae13" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 401, 3041 )
+rotation = 1.91986
+scale = Vector2( 100, 3 )
+
+[node name="ae14" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 554, 3063 )
+rotation = 1.91986
+scale = Vector2( 100, 3 )
+
+[node name="ae15" parent="plataformes/rotatories" instance=ExtResource( 14 )]
+position = Vector2( 586, 2872 )
+rotation = 1.5708
+scale = Vector2( 100, 3 )
+
+[node name="ilusorias" type="Node2D" parent="plataformes"]
+position = Vector2( 3909, 386 )
+scale = Vector2( 90, 10 )
+
+[node name="Dt20" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+
+[node name="Dt21" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+position = Vector2( -42.2333, 40 )
+scale = Vector2( 1.11, 1 )
+
+[node name="Dt23" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+position = Vector2( -37.3889, 41 )
+scale = Vector2( 1.11, 1 )
+
+[node name="Dt26" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+position = Vector2( -37.3889, 41 )
+scale = Vector2( 1.11, 1 )
+
+[node name="Dt22" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+position = Vector2( -37.4, 22 )
+scale = Vector2( 1.11, 1 )
+
+[node name="Dt27" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+position = Vector2( -37.4667, 60.4 )
+scale = Vector2( 1.11, 1 )
+
+[node name="Dt24" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+position = Vector2( -37.4222, 4.9 )
+scale = Vector2( 1.11, 1 )
+
+[node name="Dt25" parent="plataformes/ilusorias" instance=ExtResource( 4 )]
+position = Vector2( -42.2222, 4.3 )
+scale = Vector2( 1.11, 1 )
+
+[node name="Dt10" parent="plataformes/ilusorias" instance=ExtResource( 3 )]
+position = Vector2( -23.5304, -24.4465 )
+rotation = 1.5708
+scale = Vector2( 9.675, 0.105556 )
+
+[node name="rampes" type="Node2D" parent="plataformes"]
+position = Vector2( 3463, 832 )
+rotation = -0.764454
+scale = Vector2( 177, 2 )
+
+[node name="rampa" parent="plataformes/rampes" instance=ExtResource( 6 )]
+position = Vector2( 1.14029, -145.688 )
+scale = Vector2( 0.903955, 1 )
+
+[node name="rampa2" parent="plataformes/rampes" instance=ExtResource( 6 )]
+
+[node name="bg" parent="." instance=ExtResource( 13 )]
+visible = false
+position = Vector2( 335, 3212 )
+scale = Vector2( 673, 2000 )
+
+[node name="tp" parent="." instance=ExtResource( 16 )]
+
+[connection signal="body_entered" from="plataformes/rotatories/aer" to="plataformes/rotatories/aer" method="_on_aer_body_entered"]
+[connection signal="body_entered" from="plataformes/rotatories/aer2" to="plataformes/rotatories/aer2" method="_on_aer_body_entered"]
+[connection signal="body_entered" from="plataformes/rotatories/aer3" to="plataformes/rotatories/aer3" method="_on_aer_body_entered"]
+[connection signal="body_exited" from="plataformes/ilusorias/Dt10" to="plataformes/ilusorias/Dt10" method="_on_Detector_body_exited"]
