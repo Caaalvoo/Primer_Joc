@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Personatge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Paret.tscn" type="PackedScene" id=2]
@@ -14,10 +14,16 @@
 [ext_resource path="res://aer.gd" type="Script" id=12]
 [ext_resource path="res://bg.tscn" type="PackedScene" id=13]
 [ext_resource path="res://aerot.tscn" type="PackedScene" id=14]
-[ext_resource path="res://aer2.gd" type="Script" id=15]
 [ext_resource path="res://tp.tscn" type="PackedScene" id=16]
+[ext_resource path="res://ginv.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Black_MW_iPad.png" type="Texture" id=18]
 
 [node name="Joc" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2063, 2343 )
+scale = Vector2( 1.96157, 1.7134 )
+texture = ExtResource( 18 )
 
 [node name="Personatge" parent="." instance=ExtResource( 1 )]
 scale = Vector2( 3, 3 )
@@ -52,12 +58,22 @@ scale = Vector2( 100, 10 )
 script = null
 
 [node name="plataforma3" parent="plataformes/Parets" instance=ExtResource( 2 )]
-position = Vector2( 2340, 2590 )
+position = Vector2( 2244, 2626 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma72" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1708, 2375 )
 scale = Vector2( 100, 10 )
 script = null
 
 [node name="plataforma4" parent="plataformes/Parets" instance=ExtResource( 2 )]
 position = Vector2( 2264, 1295 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma6" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 1456, 1401 )
 scale = Vector2( 100, 10 )
 script = null
 
@@ -142,7 +158,7 @@ scale = Vector2( 100, 10 )
 script = null
 
 [node name="plataforma60" parent="plataformes/Parets" instance=ExtResource( 2 )]
-position = Vector2( 672, 2550 )
+position = Vector2( 673, 2550 )
 rotation = 1.5708
 scale = Vector2( 100, 10 )
 script = null
@@ -301,12 +317,73 @@ scale = Vector2( 100, 10 )
 script = null
 
 [node name="plataforma14" parent="plataformes/Parets" instance=ExtResource( 2 )]
-position = Vector2( 2919, 2591 )
+position = Vector2( 3010, 2511 )
+scale = Vector2( 100, 10 )
+
+[node name="plataforma62" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3030, 2955 )
 scale = Vector2( 100, 10 )
 script = null
 
+[node name="plataforma63" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3528, 2955 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma67" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3619, 3414 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma69" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3897, 3535 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma68" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3897, 3756 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma66" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3800, 2672 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma64" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3274, 3176 )
+rotation = 1.5708
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma65" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2736, 3182 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma70" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2948, 3540 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma71" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3281, 3742 )
+scale = Vector2( 100, 10 )
+script = null
+
+[node name="plataforma20" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 2599, 3252 )
+rotation = 1.5708
+scale = Vector2( 750, 10 )
+script = null
+
+[node name="plataforma19" parent="plataformes/Parets" instance=ExtResource( 2 )]
+position = Vector2( 3303, 2271 )
+scale = Vector2( 700, 10 )
+script = null
+
 [node name="plataforma15" parent="plataformes/Parets" instance=ExtResource( 2 )]
-position = Vector2( 2613, 3097 )
+position = Vector2( 2774, 2714 )
 scale = Vector2( 100, 10 )
 script = null
 
@@ -405,7 +482,7 @@ script = ExtResource( 11 )
 [node name="rotatories" type="Node2D" parent="plataformes"]
 
 [node name="protatoria" parent="plataformes/rotatories" instance=ExtResource( 2 )]
-position = Vector2( 3291, 3556 )
+position = Vector2( 3646, 3821 )
 rotation = 1.5708
 scale = Vector2( 150, 10 )
 
@@ -439,13 +516,11 @@ script = ExtResource( 12 )
 position = Vector2( 507, 3530 )
 rotation = 1.5708
 scale = Vector2( 100, 3 )
-script = ExtResource( 15 )
 
 [node name="aer3" parent="plataformes/rotatories" instance=ExtResource( 14 )]
 position = Vector2( 146, 3530 )
 rotation = 1.5708
 scale = Vector2( 100, 3 )
-script = ExtResource( 15 )
 
 [node name="ae7" parent="plataformes/rotatories" instance=ExtResource( 14 )]
 position = Vector2( 614, 2690 )
@@ -543,12 +618,19 @@ scale = Vector2( 0.903955, 1 )
 [node name="rampa2" parent="plataformes/rampes" instance=ExtResource( 6 )]
 
 [node name="bg" parent="." instance=ExtResource( 13 )]
+visible = false
 position = Vector2( 335, 3212 )
 scale = Vector2( 673, 2000 )
 
 [node name="tp" parent="." instance=ExtResource( 16 )]
 position = Vector2( 612, 3946 )
 scale = Vector2( 50, 50 )
+
+[node name="ginv" parent="." instance=ExtResource( 17 )]
+visible = false
+position = Vector2( 3300, 3151 )
+rotation = 0.0
+scale = Vector2( 125, 145 )
 
 [connection signal="body_entered" from="plataformes/rotatories/aer" to="plataformes/rotatories/aer" method="_on_aer_body_entered"]
 [connection signal="body_entered" from="plataformes/rotatories/aer2" to="plataformes/rotatories/aer2" method="_on_aer_body_entered"]

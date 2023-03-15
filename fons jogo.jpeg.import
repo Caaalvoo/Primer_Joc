@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dvd png.png-be03c2920840964d0051b1be29503c3d.stex"
+path="res://.import/fons jogo.jpeg-b200b5ace34dd0a4d9b8c940ca936d8f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dvd png.png"
-dest_files=[ "res://.import/dvd png.png-be03c2920840964d0051b1be29503c3d.stex" ]
+source_file="res://fons jogo.jpeg"
+dest_files=[ "res://.import/fons jogo.jpeg-b200b5ace34dd0a4d9b8c940ca936d8f.stex" ]
 
 [params]
 
