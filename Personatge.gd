@@ -9,6 +9,8 @@ var moviment := Vector2.ZERO
 var gravetat := Vector2.DOWN * 2000
 var salt := Vector2.UP * 1200
 var z := false
+var cronos := 0
+var cronot := 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	position = Vector2(2000,1990)
@@ -31,5 +33,5 @@ func _process(delta):
 		if Input.is_action_just_pressed("ves_a_dalt") and is_on_floor():
 			moviment -= salt
 		moviment = move_and_slide(moviment, Vector2.DOWN)
-	
+
 

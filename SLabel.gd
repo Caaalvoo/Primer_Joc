@@ -1,4 +1,4 @@
-extends Area2D
+extends Label
 
 
 # Declare member variables here. Examples:
@@ -14,10 +14,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-# warning-ignore:unused_argument
-func _on_tp_body_entered(body):
-	var p = get_node("/root/Joc/Personatge")
-	p.position = Vector2(687,3990)
-	
